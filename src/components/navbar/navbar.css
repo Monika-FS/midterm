@@ -1,0 +1,151 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.833);
+  box-shadow: 3px 3px 10px rgb(239, 234, 234);
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 30px;
+}
+.lg-btn-container {
+  text-align: center;
+  padding: 10px;
+}
+.lg-btn {
+  padding: 7px 15px;
+  background-color: rgb(239, 236, 236);
+  border-radius: 5px;
+  text-align: center;
+  color: rgb(15, 1, 1);
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: 2px solid rgb(151, 146, 146);
+}
+.lg-arrow {
+  margin-right: 5px;
+}
+.right-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  color: black;
+  list-style-type: none;
+  height: 100%;
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+.nav-items a {
+  text-decoration: none;
+}
+.nav-items a:hover {
+  background-color: rgb(234, 228, 228);
+  color: #000;
+  border-radius: 10px;
+}
+
+.link1 {
+  color: black;
+  list-style: none;
+}
+.menu {
+  display: none;
+}
+.wishlist-icon,
+.cart {
+  color: black;
+  list-style-type: none;
+  height: 100%;
+  padding: 10px;
+}
+
+.liked {
+  color: red;
+}
+.cart-icon {
+  color: black;
+}
+.cart-items {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  text-align: center;
+  padding: 1.5px;
+  font-weight: 900;
+  text-align: center;
+  position: absolute;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 1;
+  width: 100%;
+  height: 400px;
+  z-index: 999;
+  backdrop-filter: blur(25px);
+  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateX(100%);
+  opacity: 0;
+}
+.sidebar.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.sidebar-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidebar-items > a {
+  text-decoration: none;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: rgb(52, 35, 35);
+}
+
+.link1:hover {
+  background-color: rgb(124, 82, 82);
+}
+@media only screen and (max-width: 915px) {
+  .link {
+    display: none;
+  }
+  .wishlist-icon,
+  .cart {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .nav-items {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+  .nav-items {
+    width: 90%;
+  }
+}

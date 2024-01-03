@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.category-carousal {
+  width: 100%;
+}
+.security-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+.security-container-items {
+  background-color: rgb(228, 220, 220);
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgb(188, 171, 173);
+}
+.click-btn {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(99, 99, 235);
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+.security-container > a {
+  text-decoration: none;
+  color: white;
+}
+.click-btn:hover {
+  background-color: rgb(70, 70, 233);
+  color: rgb(243, 86, 86);
+}
+.save-earth-container {
+  width: 50%;
+  height: 130px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.save-earth-container > img {
+  width: 100px;
+}
+.save-earth-container > p {
+  color: rgb(72, 68, 68);
+  font-size: 0.7rem;
+}
+@media only screen and (max-width: 300px) {
+  .security-container-items,
+  .click-btn {
+    width: 100%;
+    font-size: 0.5rem;
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .security-container-items,
+  .click-btn {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .security-container-items,
+  .click-btn {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,20 @@
+.form-div {
+  width: 650px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 5px 5px 18px #cbc2c2;
+  margin: 100px auto;
+  padding: 25px 50px;
+}
+h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .form-div {
+    width: 80%;
+  }
+}
